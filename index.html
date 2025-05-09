@@ -1,9 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Highlights</title>
-  </head>
-  <body>
-    <h1>Welcome to My Highlights Website!</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Highlights</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #111, #222);
+      color: #eee;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+      color: #68bf86; /* soccer academy green accent */
+    }
+
+    .video-container {
+      width: 90%;
+      max-width: 960px;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      box-shadow: 0 0 15px rgba(0, 255, 128, 0.2);
+      border: 2px solid #02b064;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Elite Soccer Highlights</h1>
+
+  <div class="video-container">
+    <video controls autoplay muted>
+      <source src="highlight.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <footer>© 2025 Your Soccer Academy Name</footer>
+
+</body>
 </html>
