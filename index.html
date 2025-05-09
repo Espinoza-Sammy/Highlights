@@ -15,6 +15,7 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+      padding: 20px;
     }
 
     h1 {
@@ -33,10 +34,10 @@
       border: 2px solid #02b064;
     }
 
-    video {
+    iframe {
       width: 100%;
       height: 100%;
-      display: block;
+      border: none;
     }
 
     footer {
@@ -51,10 +52,12 @@
   <h1>Elite Soccer Highlights</h1>
 
   <div class="video-container">
-    <video controls autoplay muted>
-      <source src="highlight.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <iframe
+      src="https://www.youtube.com/embed/z4Q6skcUGjE"
+      title="Soccer Highlights"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
   </div>
 
   <footer>© 2025 Your Soccer Academy Name</footer>
